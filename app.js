@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
-app.get('/', function(req,res){
+app.get('/', function(req, res){
   res.sendFile(__dirname + '/signup.html')
 
 })
@@ -20,9 +20,6 @@ app.get('/', function(req,res){
 
 //POST REQUEST FOR HOME ROUTE
 app.post('/', function(req, res){
-
-
-
 
   const firstName =  req.body.firstName
   const lastName = req.body.lastName
@@ -48,7 +45,7 @@ app.post('/', function(req, res){
 
   const options = {
     method: 'POST',
-    auth: 'james:1d97f4072b194addb8681e8fcb9deeb9-us'
+    auth: 'james:1d97f4072b194addb8681e8fcb9deeb9-us5'
   }
 
 
