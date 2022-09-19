@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
@@ -45,7 +47,7 @@ app.post('/', function(req, res){
 
   const options = {
     method: 'POST',
-    auth: 'james:1d97f4072b194addb8681e8fcb9deeb9-us5'
+    auth: process.env.AUTH
   }
 
 
